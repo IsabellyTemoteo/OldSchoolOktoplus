@@ -35,7 +35,7 @@ void solve(string s) {
 
 int main(){
     string s; cin >> s;
-    string cpy = (s.rbegin(), s.rend());
+    string cpy(s.rbegin(), s.rend());
 
     bool ok = true;
     for(int i = 0; i < s.size(); i++){
