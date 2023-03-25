@@ -1,0 +1,1 @@
+getline(cin >> ws, s)
