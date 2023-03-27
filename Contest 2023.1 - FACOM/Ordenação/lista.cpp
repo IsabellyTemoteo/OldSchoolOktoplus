@@ -12,6 +12,7 @@ using namespace std;
 typedef long long ll;
 typedef unsigned long long ull;
 
+/**
 int main(){
     int n, aux=1, aux2=0, num=0; cin>>n;
     int vet[n];
@@ -30,12 +31,13 @@ int main(){
             aux=0;
         }
     }   
-    cout<<num<<"\n";
+    cout<<num<<"\n"; 
     
     return 0;
 }
 
-/*
+*/
+
 #include <bits/stdc++.h>
 
 using namespace std;
@@ -61,4 +63,4 @@ int main()
     return 0;
 }
 
-*/
+
