@@ -31,7 +31,7 @@ int main(){
             aux=0;
         }
     }   
-    cout<<num<<"\n";
+    cout<<num<<"\n"; 
     
     return 0;
 }
