@@ -19,18 +19,32 @@ int main(){
         int x; cin >> x;
         alturas.push_back(x);
     }
+
     sort(alturas.begin(), alturas.end());
 
     vector<int> team1, team2;
-    for(int i = n; i >= 1; i--){
-        if(i%2 == 0) team1.push_back(alturas[i]);
-        else team2.push_back(alturas[i]);
+    bool ok = true;
+    for(int i = n-1; i >= 0; i--){
+        if(ok == true){
+            team1.push_back(alturas[i]);
+            ok = false;
+        }
+        else{
+            team2.push_back(alturas[i]);
+            ok = true;
+        }
+    }
+
+    if(team1.size() > team2.size()){
+        team1.pop_back();
+        team2.push_back(alturas[0]);
     }
 
     for(auto x: team1) cout << x << " ";
     cout << endl;
     for(auto x: team2) cout << x << " ";
 
+    cout << endl;
     return 0;
 }
 
